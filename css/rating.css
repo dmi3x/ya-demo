@@ -12,7 +12,7 @@
     display: inline-block;
     height: 16px;
     width: 16px;
-    background: url("images/star.png") left top no-repeat;
+    background: url("../images/star.png") left top no-repeat;
     margin: 0 1px;
 }
 

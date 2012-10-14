@@ -1,6 +1,5 @@
 /**
- * Благодаря такой конструкции, мы можем использовать эту функцию
- *   в разных переменных не боясь перезаписать название
+ * Now we can use this function in other variables, rename it and function will work.
  */
 var reversePrint = function fn(list) {
     if(list.next!=null) {
