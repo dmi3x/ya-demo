@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Событийная модель</title>
+        <link href="css/demo.css" rel="stylesheet" />
+        <script src="js/event-model.js"></script>
+        <script src="js/event-model-test.js"></script>
+        <link href="css/button.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Событийная модель</h1>
+        <p>На этой странице демонстрируется производительность скрипта: объекты / события / обработчики</p>
+        <table>
+            <tr>
+                <td><button id="test_1" class="b-button">10 / 10 / 10</button></td>
+                <td><span id="test_1_result"></span></td>
+            </tr><tr>
+                <td><button id="test_2" class="b-button"><b>100</b> / 10 / 10</button></td>
+                <td id="test_2_result"></td>
+            </tr><tr>
+                <td><button id="test_3" class="b-button">10 / <b>100</b> / 10</button></td>
+                <td id="test_3_result"></td>
+            </tr><tr>
+                <td><button id="test_4" class="b-button">10 / 10 / <b>100</b></button></td>
+                <td id="test_4_result"></td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+body {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+}
+.wrap {
+    margin: 0 auto;
+    width: 50%;
+}
+.b-demo-group {
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #ccc;
+}
+.b-demo {
+    text-indent: 14pt;
+    text-align: justify;
+    line-height: 16px;
+}
+.b-demo__header {
+    float: left;
+    margin: 0;
+}
+.b-demo_highlight {
+    background: #F8F7F2;
+    padding: 3px;
+}
+.b-demo_text-center {
+    text-align: center;
+}

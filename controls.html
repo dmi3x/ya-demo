@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Контролы</title>
+        <link href="css/demo.css" rel="stylesheet" />
+        <link href="css/rating.css" rel="stylesheet" />
+        <link href="css/slider.css" rel="stylesheet" />
+        <link href="css/button.css" rel="stylesheet" />
+        <!--[if gte IE 9]>
+        <style type="text/css">
+            .b-button,
+            .b-slider .b-slider__progress {
+                filter: none !important;
+            }
+        </style>
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <style type="text/css">
+            .b-slider {
+                border: 1px solid #CECECE;
+            }
+        </style>
+        <![endif]-->
+        <!--[if lte IE 7]>
+        <style type="text/css">
+            button.b-button,
+            input.b-button {
+                padding: 2px 18px 3px 17px;
+                zoom: 1;
+                overflow: visible;
+                margin-right: -2px;
+            }
+        </style>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="b-demo-group">
+                <div class="b-demo b-demo_text-center">
+                   <h3 class="b-demo__header">1.</h3>
+                   <span class="b-rating"><!--
+                        --><span class="b-rating__item b-rating__item-active"></span><!--
+                        --><span class="b-rating__item b-rating__item-active"></span><!--
+                        --><span class="b-rating__item"></span><!--
+                        --><span class="b-rating__item"></span><!--
+                        --><span class="b-rating__item"></span><!--
+                --></span>
+                </div>
+                <p class="b-demo">
+                    Это самая простая реализация звёздочек, которые можно "оживить" с помощью яваскрипта -
+                    на <i>onmouseenter</i> добавлять активные классы, а на <i>onmouseleave</i> удалять их.
+                    Они могут располагаться прямо в тексте
+                    <span class="b-rating"><!--
+                        --><span class="b-rating__item b-rating__item-active"></span><!--
+                        --><span class="b-rating__item b-rating__item-active"></span><!--
+                        --><span class="b-rating__item b-rating__item-active"></span><!--
+                        --><span class="b-rating__item b-rating__item-active"></span><!--
+                        --><span class="b-rating__item"></span><!--
+                --></span>
+                    да и вообще везде где угодно.
+                    <!--А вот ниже представлена "оживлённая" версия</a> без яваскрипта.-->
+                </p>
+            </div>
+
+            <div class="b-demo-group">
+                <div class="b-demo b-demo_text-center">
+                    <h3 class="b-demo__header">2.</h3>
+                    <span class="b-slider"><!--
+                        --><span class="b-slider__progress" style="width:20%;"></span><!--
+                        --><span class="b-slider__caption">20%</span><!--
+                    --></span>
+                </div>
+                <p class="b-demo">
+                    <i>В этом месте я выполнил задание на
+                    <span class="b-slider" style="width:50px"><!--
+                    --><span class="b-slider__progress" style="width:40%;"></span><!--
+                    --><span class="b-slider__caption">40%</span><!--
+                --></span></i>
+                    Как видите, этот слайдер тоже прекрасно совмещается с любыми элементами
+                    и также благополучно может быть встроен даже в текст. <s>Но кому это надо?..</s>
+                </p>
+                <p class="b-demo b-demo_highlight b-demo_text-center">
+                    Гараздо полезнее его свойства - тянуться и выравниваться по центру:<br />
+                    <span class="b-slider" style="width:50%"><!--
+                    --><span class="b-slider__progress" style="width:75%;"></span><!--
+                    --><span class="b-slider__caption">75%</span><!--
+                --></span>
+                </p>
+            </div>
+
+            <div class="b-demo-group">
+                <div class="b-demo b-demo_text-center">
+                    <h3 class="b-demo__header">3.</h3>
+                    <a href="#" onclick="return false" class="b-button">Кнопка</a>
+                </div>
+
+                <p class="b-demo">
+                    Ну вот, эта <a href="#" onclick="return false" class="b-button"><!--
+                    -->кнопочка<!--
+                --></a> тоже хорошо смотрится
+                    посреди текста. <br />
+                </p>
+                <p  class="b-demo b-demo_text-center">
+                    Ну и конечно же, можно выстроить кнопки в ряд и выровнять по центру,
+                    даже если эти кнопки изнутри абсолютно разные:<br /><br />
+                    <a href="#" class="b-button" onclick="return false">iAnchor</a>
+                    <button class="b-button">iButton</button>
+                    <input type="submit" class="b-button" value="iInput" />
+                </p>
+                
+                <div class="b-demo b-demo_text-center">
+                    А ещё их можно объединять в такие прикольные группы:
+
+                    <table width="100%">
+                        <tr>
+                            <td>
+                                <span class="b-button-group b-button-group_horizontal"><!--
+                                    --><a href="#" onclick="return false" class="b-button b-button_rounded-reset b-button_rounded-top-left b-button_rounded-bottom-left"><!--
+                                        --><span class="b-button__text">Вырезать</span><!--
+                                    --></a><!--
+                                    --><a href="#" onclick="return false" class="b-button b-button_rounded-reset"><!--
+                                        --><span class="b-button__text">Копировать</span><!--
+                                    --></a><!--
+                                    --><a href="#" onclick="return false" class="b-button b-button_rounded-reset b-button_rounded-top-right b-button_rounded-bottom-right"><!--
+                                        --><span class="b-button__text">Вставить</span><!--
+                                    --></a><!--
+                                --></span>
+                            </td>
+                            <td>
+                                <span class="b-button-group b-button-group_vertical"><!--
+                                    --><a href="#" onclick="return false" class="b-button b-button_rounded-reset b-button_rounded-top-left b-button_rounded-top-right"><!--
+                                        -->Кнопка 1<!--
+                                    --></a><br /><!--
+                                    --><a href="#" onclick="return false" class="b-button b-button_rounded-reset"><!--
+                                        -->Кнопка 2<!--
+                                    --></a><br /><!--
+                                    --><a href="#" onclick="return false" class="b-button b-button_rounded-reset b-button_rounded-bottom-left b-button_rounded-bottom-right"><!--
+                                        -->Кнопка 3<!--
+                                    --></a><!--
+                                --></span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <p class="b-demo b-demo_text-center">
+                    Ну и на закуску...<br /><br />
+                    <a href="#" onclick="return false" class="b-button b-button_mega"><!--
+                        -->Двухэтажная супер-пупер<br />Мегакнопка!<!--
+                    --></a>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

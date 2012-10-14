@@ -1,0 +1,21 @@
+.b-rating {
+    display: inline-block;
+    width: 90px;
+    height: 16px;
+    vertical-align: middle;
+    text-indent: 0;
+    white-space: nowrap;
+    line-height: 16px;
+}
+
+.b-rating .b-rating__item {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background: url("images/star.png") left top no-repeat;
+    margin: 0 1px;
+}
+
+.b-rating .b-rating__item-active {
+    background-position: left bottom;
+}
