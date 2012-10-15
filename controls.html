@@ -40,27 +40,25 @@
             <div class="b-demo-group">
                 <div class="b-demo b-demo_text-center">
                    <h3 class="b-demo__header">1.</h3>
-                   <span class="b-rating"><!--
-                        --><span class="b-rating__item b-rating__item-active"></span><!--
-                        --><span class="b-rating__item b-rating__item-active"></span><!--
-                        --><span class="b-rating__item"></span><!--
-                        --><span class="b-rating__item"></span><!--
-                        --><span class="b-rating__item"></span><!--
+                    <span class="b-rating b-rating_active"><!--
+                        --><a href="#rating1" class="b-rating__item"></a><!--
+                        --><a href="#rating2" class="b-rating__item b-rating__item_active"></a><!--
+                        --><a href="#rating3" class="b-rating__item"></a><!--
+                        --><a href="#rating4" class="b-rating__item"></a><!--
+                        --><a href="#rating5" class="b-rating__item"></a><!--
                 --></span>
                 </div>
                 <p class="b-demo">
-                    Это самая простая реализация звёздочек, которые можно "оживить" с помощью яваскрипта -
-                    на <i>onmouseenter</i> добавлять активные классы, а на <i>onmouseleave</i> удалять их.
-                    Они могут располагаться прямо в тексте
-                    <span class="b-rating"><!--
-                        --><span class="b-rating__item b-rating__item-active"></span><!--
-                        --><span class="b-rating__item b-rating__item-active"></span><!--
-                        --><span class="b-rating__item b-rating__item-active"></span><!--
-                        --><span class="b-rating__item b-rating__item-active"></span><!--
-                        --><span class="b-rating__item"></span><!--
+                    Эти чудесные звёздочки можно использовать даже в тексте. Правда смотрятся они в нём на
+                    <span class="b-rating b-rating_active"><!--
+                        --><a href="#" onclick="return false" class="b-rating__item"></a><!--
+                        --><a href="#" onclick="return false" class="b-rating__item"></a><!--
+                        --><a href="#" onclick="return false" class="b-rating__item"></a><!--
+                        --><a href="#" onclick="return false" class="b-rating__item b-rating__item_active"></a><!--
+                        --><a href="#" onclick="return false" class="b-rating__item"></a><!--
                 --></span>
-                    да и вообще везде где угодно.
-                    <!--А вот ниже представлена "оживлённая" версия</a> без яваскрипта.-->
+                   Для их "оживления" используется комбинатор General Sibling "~", который относится к CSS3.
+                   Однако, невзирая на его редкое применение, все современные браузеры его поддерживают: IE7+, Safari 1.3+, Firefox 1.5+, Opera 7.0+.
                 </p>
             </div>
 
@@ -88,6 +86,7 @@
                     --><span class="b-slider__caption">75%</span><!--
                 --></span>
                 </p>
+                <p><small>К сожалению даже в IE9 отсутствует тень такста, а в IE8 не красивых закруглений и теней, но я уверен если очень надо, у IE всегда найдётся какой-то волшебный хак-файлик, чтоб выглядеть как современный браузер.</small></p>
             </div>
 
             <div class="b-demo-group">
@@ -118,13 +117,13 @@
                             <td>
                                 <span class="b-button-group b-button-group_horizontal"><!--
                                     --><a href="#" onclick="return false" class="b-button b-button_rounded-reset b-button_rounded-top-left b-button_rounded-bottom-left"><!--
-                                        --><span class="b-button__text">Вырезать</span><!--
+                                        -->Вырезать<!--
                                     --></a><!--
                                     --><a href="#" onclick="return false" class="b-button b-button_rounded-reset"><!--
-                                        --><span class="b-button__text">Копировать</span><!--
+                                        -->Копировать<!--
                                     --></a><!--
                                     --><a href="#" onclick="return false" class="b-button b-button_rounded-reset b-button_rounded-top-right b-button_rounded-bottom-right"><!--
-                                        --><span class="b-button__text">Вставить</span><!--
+                                        -->Вставить<!--
                                     --></a><!--
                                 --></span>
                             </td>
