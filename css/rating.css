@@ -17,6 +17,7 @@
     background: url("../images/star.png") center top no-repeat;
     padding: 0 1px;
     text-decoration: none;
+    outline: none;
 }
 
 .b-rating_active .b-rating__item {
