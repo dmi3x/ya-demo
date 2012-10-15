@@ -13,6 +13,7 @@
     text-indent: 0;
     border: 1px solid #ccc;
     border-color: #e5e5e5 #ccc #a8a8a8;
+    white-space: nowrap;
 
     -webkit-border-radius: 7px;
        -moz-border-radius: 7px;
