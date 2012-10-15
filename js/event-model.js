@@ -13,6 +13,26 @@ function mix(target, mixin) {
 
 /**
  * Observable Mixin
+ *
+ * 1. Mix target object
+ *      var target = {}
+ *      mix(target, Observable_Mixin);
+ *      
+ * 2. Bind event
+ *      target.bind('init', fnHandler1);
+ *      target.bind('init', fnHandler1);
+ *      target.bind('init', fnHandler2, objScope);
+ *      target.bind('load', fnHandler3, objScope);
+ *
+ * 3. Fire event
+ *      target.fire('init'); // run fnHandler1 with target scope twice, run fhHandler2 with objScope
+ *
+ * 4. Unbind event
+ *      target.unbind('init', fnHandler2, objScope); // unbind specific handler with specific scope
+ *      target.unbind('init', fnHandler1);           // unbind both fnHandler1 events on target
+ *      target.unbind('load');  // unbind all handlers for load event on target
+ *      target.unbind('fake');  // no deined event donot throw exceptions
+ *      target.unbind();        // unbind all events
  */
 var Observable_Mixin = {
 
