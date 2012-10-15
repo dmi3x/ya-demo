@@ -32,7 +32,7 @@ function mix(target, mixin) {
  *      target.unbind('init', fnHandler1);           // unbind both fnHandler1 events on target
  *      target.unbind('load');  // unbind all handlers for load event on target
  *      target.unbind('fake');  // no deined event donot throw exceptions
- *      target.unbind();        // unbind all events
+ *      target.unbind();        // unbind all events on target
  */
 var Observable_Mixin = {
 
