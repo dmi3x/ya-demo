@@ -1,10 +1,10 @@
 var config = {
     listeners : {
-        'init' : function() {
-            console.log('I an inited');
+        'beforeload' : function() {
+            console.log('Loading...');
         },
         'load' : function() {
-            console.log('I am loaded');
+            console.log('I am loaded!');
         }
     }
 }
@@ -19,7 +19,7 @@ var Panel = function() {
         }
     }
 
-    this.fire('init');
+    this.fire('beforeload');
     // ..... ajax .......
     var me = this;
     setTimeout(function(){
