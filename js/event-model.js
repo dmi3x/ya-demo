@@ -106,7 +106,8 @@ var Observable_Mixin = {
         }
         var events = this.events[eventName];
         var result = true;
-        for(var i in events) {
+        var eventsCount = events.length;
+        for(var i=0; i<eventsCount; i++) {
             var event = events[i];
             if(event.handler.call(event.scope, event) === false) {
                 result = false;
