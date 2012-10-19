@@ -105,12 +105,13 @@ var Observable_Mixin = {
             return true;
         }
         var events = this.events[eventName];
+        var result = true;
         for(var i in events) {
             var event = events[i];
             if(event.handler.call(event.scope, event) === false) {
-                return false;
+                result = false;
             }
         }
-        return true;
+        return result;
     }
 }
