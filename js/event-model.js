@@ -58,7 +58,7 @@ var Observable_Mixin = {
         if( ! this.events) {
             this.events = {};
         }
-        if(typeof this.events[eventName] == 'undefined') {
+        if( ! this.events[eventName]) {
             this.events[eventName] = [];
         }
         this.events[eventName].push(event);
@@ -77,7 +77,7 @@ var Observable_Mixin = {
             this.events = {};
             return this;
         }
-        if(typeof this.events[eventName] == 'undefined') {
+        if( ! this.events[eventName]) {
             return this;
         }
         var list = this.events[eventName];
@@ -101,7 +101,7 @@ var Observable_Mixin = {
      * @return {Boolian}
      */
     fire : function(eventName) {
-        if( ! this.events || typeof this.events[eventName] == 'undefined') {
+        if( ! this.events || ! this.events[eventName]) {
             return true;
         }
         var events = this.events[eventName];
