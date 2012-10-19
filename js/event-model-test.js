@@ -1,5 +1,5 @@
 // ---- Prepare test -----
-var i, j, m, obj,
+var i, j, m, n, obj,
     targets,
     events,
     handlers;
@@ -41,7 +41,9 @@ function runTest(strTestId) {
     // Run events
     for(i in targets) {
         for(j in events) {
-            targets[i].fire(events[j]);
+            for(n=0; n<100; n++) {
+                targets[i].fire(events[j]);
+            }
         }
     }
     // Unbind events
